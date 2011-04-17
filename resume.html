@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>T Vishwesh Prabhu - Resume</title>
+
+
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/themes/ui-darkness/jquery-ui.css" type="text/css" media="all" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" type="text/javascript"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js" type="text/javascript"></script>
+	
+	
+  
+  		<script>
+  		$(function() {
+
+			var icons = {
+				header: "ui-icon-circle-arrow-e",
+				headerSelected: "ui-icon-circle-arrow-s"
+			};
+
+
+    			$("#accordion").accordion({
+				autoHeight: false,
+				fillSpace: false,
+				icons : icons
+
+			});
+
+			$("#accordionResizer").resizable({
+				resize: function() {
+					$("#accordion").accordion("resize");
+				}
+			});
+
+			$("tbody tr:nth-child(odd)").addClass("odd");	
+
+			$('.tabs').tabs();
+
+			$("#fixed").addClass("ui-state-highlight")
+					 .addClass("ui-corner-all")
+					 .prepend('<span class="ui-icon ui-icon-unlocked"></span>')
+
+			$("#fixed .ui-icon").click(function() {
+                        	if($("#fixed").find(".ui-icon").is(".ui-icon-unlocked"))
+                	    	{
+                	    		$("#fixed").css("position","absolute").css("width","96.5%");
+                		        $(this).toggleClass("ui-icon-unlocked").toggleClass("ui-icon-locked");
+              	   		}
+                	   	else if($("#fixed").find(".ui-icon").is(".ui-icon-locked"))
+				{
+					$("#fixed").css("position","relative").css("width","97.5%");
+					$(this).toggleClass("ui-icon-locked").toggleClass("ui-icon-unlocked");						
+                	    	}  
+                 	});  
+
+			$("tr:odd").addClass("ui-state-highlight");
+
+		});
+		</script>
+		<style type="text/css" media="screen">
+
+
+		body{
+			font-size:62.5%;
+		}
+
+		table {
+  			margin: 10px;
+  			border: 3px solid #666;
+  			width:80%;
+		}
+
+		td {
+  			padding: 3px;
+		}
+
+		.ui-icon-star{
+			float: left; 
+			margin-left:-2%;
+		}
+
+		#fixed{
+			position:relative; 
+			top : 0px;
+			padding-left:2%; 
+			font-size:1.4em;
+			z-index : 200;
+		}
+
+
+		#fixed .ui-icon{
+			float : right; 
+		}
+
+		
+		.ui-icon-extlink{
+			float : left;
+		}
+
+		</style>
+	</head>
+	<body>
+
+		<div id="fixed" >
+			<hr/>	
+					<center>Resume</center>
+					T. Vishwesh Prabhu <br/>
+					Mobile  : +91-9742278416 <br/>
+					E-mail  : vish_last@yahoo.co.in <a href="http://visu.co.nr/Virtualkey/keyboard.html" class="ui-icon ui-icon-extlink"></a><br/>
+					WebSite : http://www.visu.co.nr <a href="http://visu.co.nr/Virtualkey/keyboard.html" class="ui-icon ui-icon-extlink"></a>
+			<hr/>
+		</div>
+		<div id="accordion" >
+			<h3><a href="#">Profile Snapshot</a></h3>
+			<div>
+				An engineering professional, with 2.6+ years of experience, in providing J2EE based software products/projects, in Oil and Gas domain. Expertise in: Innovative product conceptualization, design and development. Having experience as a Consultant and Business Analyst. Currently working in, Infosys Technologies as Systems Engineer.  Also developing, open source products as a freelancer.
+			</div>
+			<h3><a href="#">Strengths</a></h3>
+			<div>
+				<span class="ui-icon ui-icon-star"></span>Experience in team handling, project management and client interfacing.<br/>
+				<span class="ui-icon ui-icon-star"></span>Experience in working as a Business Analyst and a Consultant.<br/>
+				<span class="ui-icon ui-icon-star"></span>Expertise in JQuery Plugin development.<br/>
+				<span class="ui-icon ui-icon-star"></span>Expertise in Java, Java EE Technologies including Web and mobile application development<br/>
+				<span class="ui-icon ui-icon-star"></span>Expertise in creating, efficient database management methodologies for databases(2TeraBytes+) for faster performance<br/>
+				<span class="ui-icon ui-icon-star"></span>Experience in SQL/PL-SQL development.<br/>
+				<span class="ui-icon ui-icon-star"></span>Sound knowledge on Oil and Gas Domain, especially Exploration & Production.<br/>
+			</div>
+			<h3><a href="#">Work Experience</a></h3>
+			<div>
+				<div class="tabs">
+					<ul>
+						<li><a href="#other-tabs-1">Infosys</a></li>
+					</ul>
+					<div id="other-tabs-1">
+						<table border="0" cellpadding="0" cellspacing="1">
+						<tbody>
+							<tr>
+								<th>Name</th>
+								<td>Infosys Technologies Ltd.<span class="ui-state-highlight"><a href="http://www.infosys.com" class="ui-icon ui-icon-extlink"/></span></td>
+							</tr>
+							<tr>
+								<th>Period</th>
+								<td>September 2008 to Present </td>
+							</tr>		
+							<tr>
+								<th>About</th>
+								<td>One of the first companies to develop and deploy a global delivery model and attain SEI-CMMI Level 5 certification for offshore and onsite operations. Have 44 global development centers, the majority of which are located in India </td>
+							</tr>
+							<tr>
+								<th>Designation</th>
+								<td>Systems Engineer</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>	
+			</div>
+			<h3><a href="#">Open Source Projects/Plugins</a></h3>
+			<div>
+				<div class="tabs">
+					<ul>
+						<li><a href="#open-tabs-1">Virtual Key</a></li>
+						<li><a href="#open-tabs-2">Logify </a></li>
+					</ul>
+					<div id="open-tabs-1">
+						<table border="0" cellpadding="0" cellspacing="1">
+						<tbody>	
+							<tr>
+								<th>Project Name</th>
+								<td>Virtual Key</td>
+							</tr>
+							<tr>
+								<th>Technology</th>
+								<td>JavaScript, HTML, CSS</td>
+							</tr>
+							<tr>
+								<th>Library</th>
+								<td>JQuery</td>
+							</tr>
+							<tr>
+								<th>Description of the project</th>
+								<td>
+								This plug-in allows user to add a keyboard to any text field of their site. Virtual key would prevent key loggers from knowing the text entered.This kind of plug-in is highly useful in safe online transaction systems like bank websites etc.
+								</td>
+							</tr>
+							<tr>
+								<th>Plug-in URL</th>
+								<td>http://plugins.jquery.com/project/VirtualKey<span class="ui-state-highlight"><a href="http://plugins.jquery.com/project/VirtualKey" class="ui-icon ui-icon-extlink"></a></span></td>
+							</tr>
+							<tr>
+								<th>Demo Site</th>
+								<td>http://visu.co.nr/Virtualkey/keyboard.html<span class="ui-state-highlight"><a href="http://visu.co.nr/Virtualkey/keyboard.html" class="ui-icon ui-icon-extlink"></a></span></td>
+							</tr>
+							<tr>
+								<th>Status</th>
+								<td>Version 2.0 under build stage</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+					<div id="open-tabs-2">
+						<table border="0" cellpadding="0" cellspacing="1">
+						<tbody>
+							<tr>
+								<th>Project Name</th>
+								<td>Logify </td>
+							</tr>
+							<tr>
+								<th>Technology</th>
+								<td>JavaScript, HTML, CSS</td>
+							</tr>
+							<tr>
+								<th>Library</th>
+								<td>JQuery</td>
+							</tr>
+							<tr>
+								<th>Description of the project</th>
+								<td>
+								    This plug-in allows login functionality to be added to any site without any change to the UI or modification on the server side. The Login fields have a complete Web 2.0 look, feel and functionality.The plug-in uses a combination of AJAX, JSON and POST method to communicate with the server.
+								</td>
+							</tr>	
+							<tr>
+								<th>Plug-in URL</th>
+								<td>http://plugins.jquery.com/project/Logify<span class="ui-state-highlight"><a href="http://plugins.jquery.com/project/Logify" class="ui-icon ui-icon-extlink"></a></span></td>
+							</tr>
+							<tr>
+								<th>Demo Site</th>
+								<td>http://visu.co.nr/logify/logify.html<span class="ui-state-highlight"><a href="http://visu.co.nr/logify/logify.html" class="ui-icon ui-icon-extlink"></a></span></td>
+							</tr>
+							<tr>
+								<th>Status</th>
+								<td>Version 2.0 under build stage</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>		
+			</div>
+			<h3><a href="#">Projects Undertaken</a></h3>
+			<div>	
+				<div class="tabs">
+					<ul>
+						<li><a href="#proj-tabs-1">Flow Cal</a></li>
+						<li><a href="#proj-tabs-2">Documentum</a></li>
+						<li><a href="#proj-tabs-3">Web Portal - Performance Management</a></li>
+						<li><a href="#proj-tabs-4">Web Portal - E-Commerce</a></li>
+						<li><a href="#proj-tabs-5">Automated Dashboard Creator</a></li>
+					</ul>
+					<div id="proj-tabs-1">
+						<table border="0" cellpadding="0" cellspacing="1">
+						<tbody>
+							<tr>
+								<th>Project Name</th>
+								<td>FlowCal</td>
+							</tr>		
+							<tr>
+								<th>Client</th>
+								<td>A Fortune 10 Oil Giant</td>
+							</tr>
+							<tr>
+								<th>Description of the project</th>
+								<td>The project involved migrating FlowCal from 10 different assets to a single instance. The project also involved setting up FlowCal on 2 new instances. Also in scope was standardizing the FlowCal settings across the assets and making it complaint to regulatory board standards. </td>
+								</tr>
+							<tr>
+								<th>Role</th>
+								<td>Consultant, Analyst, Lead a team 7</td>
+							</tr>
+							<tr>
+								<th>Responsibility</th>
+								<td>Analyze the cause and effects, Lead a team of 5</td>
+							</tr>			
+							<tr>
+							<th>Duration</th>
+							<td>5+months</td>
+						</tr>
+						<tr>
+							<th>Hardware</th>
+							<td>4 servers(with different RAM and processors)</td>
+						</tr>
+						<tr>
+							<th>Softwares</th>
+							<td>FlowCal, Oracle, Citrix, JDK</td>
+						</tr>
+						<tr>	
+							<th>Team Size</th>
+							<td>13</td>
+						</tr>
+					</tbody>
+					</table>	
+				</div>
+				<div id="proj-tabs-2">
+					<table border="0" cellpadding="0" cellspacing="1">
+					<tbody>
+						<tr>
+							<th>Project Name</th>
+							<td>Documentum</td>
+						</tr>		
+						<tr>
+							<th>Client</th>
+							<td>A Fortune 10 Oil Giant</td>
+						</tr>
+						<tr>
+							<th>Description of the project</th>
+							<td>The Project Involved development, support and maintenance of clients Documentum sites. A total of 24 sites where developed and supported. It also included migration of the sites form Documentum 5.3 to 6.5.</td>
+						</tr>
+						<tr>
+							<th>Role</th>
+							<td>Developer</td>
+						</tr>
+						<tr>
+							<th>Responsibility</th>
+							<td>Develop, Support, Maintain, Administer</td>
+						</tr>		
+						<tr>
+							<th>Duration</th>
+							<td>1+yrs</td>
+						</tr>
+						<tr>
+							<th>Hardware</th>
+							<td>Nearly 8 servers(with 8 GB RAM and 2 to 8 processors) and 3 desktop machines</td>
+						</tr>
+						<tr>	
+							<th>Softwares</th>
+							<td>Documentum, Oracle, Citrix, JDK, Apache Tomcat</td>
+						</tr>
+						<tr>
+							<th>Team Size</th>
+							<td>12</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+				<div id="proj-tabs-3">
+					<table border="0" cellpadding="0" cellspacing="1">
+					<tbody>	
+						<tr>
+							<th>Project Name</th>
+							<td>Web Portal for Performance Goals Management</td>
+						</tr>		
+						<tr>
+							<th>Client</th>
+							<td>Internal Project</td>
+						</tr>
+						<tr>
+							<th>Description of the project</th>
+							<td>The project involved creating a portal for managers to submit their performance goals and to track the submissions. Also in scope was rollup of data to a unit level and rolling down data to a resource level. </td>
+						</tr>
+						<tr>
+							<th>Role</th>
+							<td>Lead, Developer</td>
+						</tr>
+						<tr>	
+							<th>Responsibility</th>
+							<td>Lead a team of 18,Develop the middle Layer Tier and the Front End</td>
+						</tr>		
+						<tr>
+							<th>Duration</th>
+							<td>3+months</td>
+						</tr>
+						<tr>
+							<th>Softwares</th>
+							<td>Java, Oracle, JQuery, Prototype, Apache Tomcat</td>
+						</tr>
+						<tr>
+							<th>Team Size</th>
+							<td>21</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+				<div id="proj-tabs-4">
+					<table border="0" cellpadding="0" cellspacing="1">
+					<tbody>
+						<tr>
+							<th>Project Name</th>
+							<td>Web Portal for E-Commerce(Food Court)</td>
+						</tr>		
+						<tr>
+							<th>Client</th>
+							<td>Internal Project(Developed for IP creation)</td>
+						</tr>
+						<tr>
+							<th>Description of the project</th>
+							<td>The project involved creating a portal for E-Commerce. A Food Court was taken as a client while developing the site. The site was made configurable for any E-Commerce client. The site was made in complete Web 2.0 architecture with most emphasis given to the front end development, modularity and reusability. </td>
+						</tr>
+						<tr>
+							<th>Role</th>
+							<td>Developer</td>
+						</tr>
+						<tr>	
+							<th>Responsibility</th>
+							<td>Design, develop and test the portal from end to end.</td>
+						</tr>		
+						<tr>
+							<th>Duration</th>
+							<td>2 months</td>
+						</tr>
+						<tr>
+							<th>Softwares</th>
+							<td>Java, Oracle, JQuery, Apache tomcat</td>
+						</tr>
+						<tr>
+							<th>Team Size</th>
+							<td>1</td>
+						</tr>
+					</tbody>		
+					</table>
+				</div>
+				<div id="proj-tabs-5">
+					<table border="0" cellpadding="0" cellspacing="1">
+					<tbody>	
+						<tr>
+							<th>Project Name</th>
+							<td>Automated Dashboard Creation Tool</td>
+						</tr>		
+						<tr>
+							<th>Client</th>
+							<td>Internal Project(Developed for IP creation)</td>
+						</tr>
+						<tr>
+							<th>Description of the project</th>
+							<td>The project involved creating an Online tool that could be integrated with any existing website (Intranet/Internet) and database to give dashboard functionality to the site. The tool was made in complete Web 2.0 architecture with most emphasis given to the front end development, modularity and reusability. </td>
+						</tr>
+						<tr>
+							<th>Role</th>
+							<td>Developer</td>
+						</tr>
+						<tr>
+							<th>Responsibility</th>
+							<td>Design, develop and test the portal from end to end.</td>
+						</tr>		
+						<tr>
+							<th>Duration</th>
+							<td>2 months</td>
+						</tr>
+						<tr>	
+							<th>Softwares</th>
+							<td>Java, Oracle, JQuery, Apache Tomcat</td>
+						</tr>
+						<tr>
+							<th>Team Size</th>
+							<td>1</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+			</div>		
+		</div>
+		<h3><a href="#">Other Projects</a></h3>
+		<div>
+			<div class="tabs">
+				<ul>
+					<li><a href="#other-tabs-1">Credit Mobile</a></li>
+				</ul>
+				<div id="other-tabs-1">
+					<table border="0" cellpadding="0" cellspacing="1">
+					<tbody>
+						<tr>
+							<th>Project Name</th>
+							<td>Credit Mobile </td>
+						</tr>
+						<tr>
+							<th>Technology</th>
+							<td>J2ME,J2SE,PHP,MySQL,C++</td>
+						</tr>
+						<tr>
+							<th>Library</th>
+							<td>JSR 82(Bluetooth), ISO 8583 (Financial transaction card originated messages)</td>
+						</tr>
+						<tr>
+							<th>Description of the project</th>
+							<td>
+							    Credit Card fraud prevention system having user authentication as well as card authentication at its core, without changing the current framework.
+							</td>
+						</tr>
+						<tr>
+							<th>Status</th>
+							<td>Talks for Patenting the product going on.</td>
+						</tr>
+						<tr>
+							<th>Team Size</th>
+							<td>2</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+			</div>		
+		</div>
+		<h3><a href="#">Technical Knowledge</a></h3>
+		<div>
+			<span class="ui-icon ui-icon-star"></span>Languages		: Java, SQL, PL-SQL, XML ,HTML, Java Script, CSS, AJAX, DTD,PHP,Perl, C#<br/>
+			<span class="ui-icon ui-icon-star"></span>Frameworks		: J2ME, J2SE, J2EE,  Dot Net<br/>
+			<span class="ui-icon ui-icon-star"></span>API			: Jquery, JSP, Apache POI, Ajax - Dojo tool kit, JSON, Prototype <br/>
+			<span class="ui-icon ui-icon-star"></span>Concepts		: OOAD(UML, Design Pattern), RDBMS Basic Concepts<br/>
+			<span class="ui-icon ui-icon-star"></span>Server		: Glassfish, Apache , JBOSS, Tomcat<br/>
+			<span class="ui-icon ui-icon-star"></span>Software		: Eclipse, SQL Developer, Toad, MySQL Sever Studio, VSS, Apache ANT<br/>
+			<span class="ui-icon ui-icon-star"></span>Database		: Oracle 9i and Oracle 10g, SQL Server, MySql<br/>
+			<span class="ui-icon ui-icon-star"></span>System		: Windows XP,Vista<br/>
+		</div>
+		<h3><a href="#">Papers Presented</a></h3>
+		<div>
+			<span class="ui-icon ui-icon-star"></span>Home Energy Management – Set labs(Infosys R&D unit)<br/>
+			<span class="ui-icon ui-icon-star"></span>Credit Card Fraud Prevention– Current loop holes and their closure methods.<br/>
+		</div>	
+		<h3><a href="#">Achievements</a></h3>
+		<div>
+			<span class="ui-icon ui-icon-star"></span>Best debut Award Q1 2009-10 , EUS ,Infosys Technologies Ltd<br/>
+			<span class="ui-icon ui-icon-star"></span>Innovator Award for 2009-10 at the Awards of Excellence , Infosys Technologies Ltd<br/>
+			<span class="ui-icon ui-icon-star"></span>One of the Top 10 innovators of the Year under iBuild<br/>
+			<span class="ui-icon ui-icon-star"></span>Enterpreurs Award<br/>
+			<span class="ui-icon ui-icon-star"></span>Tech Explorer Award<br/>
+		</div>
+			<h3><a href="#">Education Details</a></h3>
+			<div>
+				<span class="ui-icon ui-icon-star"></span>Bachelor of Engineering (COMPUTER SCIENCE ENGG.) – VTU - May 2008 -70.2%<br/>				<span class="ui-icon ui-icon-star"></span>II PUC(PCM) – KSEB – March 2004- 87.5%<br/>
+				<span class="ui-icon ui-icon-star"></span>10th std –CBSE-  March 2002- 80.2%<br/>
+			</div>
+		<h3><a href="#">Personal Particulars</a></h3>
+		<div>
+			<span class="ui-icon ui-icon-star"></span>Date of Birth			: 23-April-1986<br/>
+			<span class="ui-icon ui-icon-star"></span>Language proficiencies	: English, Hindi, Kannada & Konkani<br/>
+			<span class="ui-icon ui-icon-star"></span>Marital status/Sex 		: Married/Male<br/>
+			<span class="ui-icon ui-icon-star"></span>Nationality			: Indian<br/>
+			<span class="ui-icon ui-icon-star"></span>Passport Valid upto   	: 16 June 2018<br/>
+			<span class="ui-icon ui-icon-star"></span>NSR Number			:<br/>
+			<span class="ui-icon ui-icon-star"></span>Permanent Address		: “Guru Paduka” Near Mahalingeshwar Temple, Kavoor Mangalore ,Karnataka – 575015<br/>
+		</div>	
+	</div>
+
+	</body>
+</html>
